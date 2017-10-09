@@ -1,0 +1,75 @@
+#container {
+	width: 500px;
+	height: 280px;
+	padding: 50px;
+	margin: 100px auto 50px;
+	border-radius: 25px;
+	box-shadow: 0px 0px 5px #777;
+}
+
+#wraper {
+	width: 500px;
+	height: 280px;
+	cursor: pointer;
+	perspective: 2000px;
+	transform-style: preserve-3d;
+}
+
+
+
+
+.box {
+	width: 50px;    /* JS 控制 */
+	height: 280px;
+	position: absolute;
+	transform-style: preserve-3d;
+	transform: translateZ(-140px);
+	transition: all 1s;
+}
+
+.pic {
+	width: 50px;    /* JS 控制 */
+	height: 280px;
+	position: absolute;
+}
+
+.pic:nth-child(1) {
+	transform: translateZ(140px);
+}
+
+.pic:nth-child(2) {
+	transform-origin: top;
+	transform: translateZ(-140px) rotateX(90deg);
+}
+
+.pic:nth-child(3) {
+	transform: translateZ(-140px) rotateX(180deg);
+}
+
+.pic:nth-child(4) {
+	transform-origin: bottom;
+	transform: translateZ(-140px) rotateX(-90deg);
+}
+
+
+
+#btn {
+	text-align: center;
+}
+
+.btn, #prev, #next {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	line-height: 35px;
+	margin: 10px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.active {
+	background-color: orange;
+}

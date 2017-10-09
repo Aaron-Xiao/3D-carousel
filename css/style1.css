@@ -1,0 +1,56 @@
+#container {
+	width: 500px;
+	height: 280px;
+	padding: 50px;
+	margin: 100px auto 50px;
+	border-radius: 25px;
+	box-shadow: 0px 0px 5px #777;
+}
+
+
+#wraper {
+	width: 500px;
+	height: 250px;
+	cursor: pointer;
+	perspective: 2000px;
+	transform-style: preserve-3d;
+}
+
+
+
+.box {
+	width: 48px;     /* JS 控制 */
+	height: 48px;    /* JS 控制 */
+	border: 1px solid #fff;
+	border-color: transparent;
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+#btn {
+	text-align: center;
+}
+
+.btn, #prev, #next {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	line-height: 35px;
+	margin: 10px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.active {
+	background-color: orange;
+}
